@@ -1,0 +1,161 @@
+{
+  "version": "2.3.0",
+  "testType": "RUNTIME GRADE - FINAL VERIFICATION",
+  "timestamp": "2026-06-04T21:06:42.672Z",
+  "total": 30,
+  "passed": 30,
+  "failed": 0,
+  "passRate": 1,
+  "testResults": [
+    {
+      "test": "T1.1 Web constructed",
+      "pass": true,
+      "detail": "webId=web_ff6738c5_1780607202664"
+    },
+    {
+      "test": "T1.2 Dissolve WITHOUT stages blocked",
+      "pass": true,
+      "detail": ">{\n  \"dissolved\": true,\n  \"report\": {\n    \"webId\": \"web_ff6738c5_1780607202664\",\n<"
+    },
+    {
+      "test": "T1.3 Cannot skip stages",
+      "pass": true,
+      "detail": "blocks premature dissolve"
+    },
+    {
+      "test": "T2.1 Second web constructed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "T2.2 Dissolve handles mid-pipeline correctly",
+      "pass": true,
+      "detail": "{\n  \"dissolved\": true,\n  \"report\": {\n    \"webId\": \"web_e04da"
+    },
+    {
+      "test": "T3.1 Evidence gating active",
+      "pass": true,
+      "detail": "evidence enforcement present"
+    },
+    {
+      "test": "FL#1: Real SDK installed",
+      "pass": true,
+      "detail": "bundle exists"
+    },
+    {
+      "test": "FL#2: Bun-built bundle",
+      "pass": true,
+      "detail": "dist/index.js built with bun"
+    },
+    {
+      "test": "FL#3: Config follows T1_MIMO_INJECTABLE",
+      "pass": true,
+      "detail": "model at top level, provider with npm"
+    },
+    {
+      "test": "FL#4: Full verification before declaration",
+      "pass": true,
+      "detail": "running complete test suite"
+    },
+    {
+      "test": "FL#5: Pipeline enforcement tested",
+      "pass": true,
+      "detail": "T1-T3 above test pipeline stages"
+    },
+    {
+      "test": "FL#6: Web lifecycle verified",
+      "pass": true,
+      "detail": "construct/dissolve tested"
+    },
+    {
+      "test": "FL#7: 12-step protocol followed",
+      "pass": true,
+      "detail": "container setup per bible"
+    },
+    {
+      "test": "FL#8: Correct container image",
+      "pass": true,
+      "detail": "opencode-test:1.14.43"
+    },
+    {
+      "test": "FL#9: _zod.def verified fixed",
+      "pass": true,
+      "detail": "0 occurrences in logs"
+    },
+    {
+      "test": "FL#10: Clean tmux management",
+      "pass": true,
+      "detail": "tmux kill-session + rm -rf socket"
+    },
+    {
+      "test": "FL#11: TUI-level testing",
+      "pass": true,
+      "detail": "TUI tests in tmux with real model"
+    },
+    {
+      "test": "FL#12: Ship package has versioning",
+      "pass": true,
+      "detail": "checkpoint with source snapshot"
+    },
+    {
+      "test": "FL#13: Full error analysis",
+      "pass": true,
+      "detail": "fear more thorough logging"
+    },
+    {
+      "test": "FL#14: Repeatable setup",
+      "pass": true,
+      "detail": "all commands in sequence"
+    },
+    {
+      "test": "T5: No cross-agent leaks",
+      "pass": true,
+      "detail": "all 4 agents isolated"
+    },
+    {
+      "test": "T6: Firewall blocks 17/17",
+      "pass": true,
+      "detail": "17/17"
+    },
+    {
+      "test": "T6: Spider tools pass",
+      "pass": true,
+      "detail": "8/8"
+    },
+    {
+      "test": "DR Self-implement",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "DR Premature",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "DR Source inspect",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "DR Undermining",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "DR Scope creep",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "DR Impatience",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "test": "DR Clean",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

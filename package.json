@@ -1,0 +1,23 @@
+{
+  "name": "spider-v2.3",
+  "version": "2.3.0",
+  "description": "Spider v2.3 — Runtime-Grade Autonomous Agent with Semantic Engine v3.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.15.13",
+    "typescript": "^5.4.0",
+    "zod": "^4.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.0",
+    "vitest": "^1.6.0"
+  }
+}

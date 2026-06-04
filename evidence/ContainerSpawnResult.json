@@ -1,0 +1,14 @@
+{
+  "ContainerSpawnResult": {
+    "containerName": "spider-v23-final-0604122458",
+    "image": "opencode-test:1.14.43",
+    "hostVersion": "1.14.43",
+    "containerVersion": "1.14.43",
+    "binaryMatch": true,
+    "pluginsDeployed": 7,
+    "plugins": ["kraken-agent","shark-agent","manta-agent","hive-mind","spider-agent-v2","agent-vision","trident"],
+    "configMethod": "§7 Config clone + MiMo v2.5 Pro (§8)",
+    "method": "§8 12-Step Protocol",
+    "timestamp": "2026-06-04T08:30:57Z"
+  }
+}
