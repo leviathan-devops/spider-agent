@@ -1,52 +1,118 @@
-# SPIDER AGENT v2.3 — Runtime-Grade Autonomous Agent Swarm
+# SPIDER AGENT v2.3 — Linear-Execution Swarm-Enabled Software Engineering Agent
 
-**Status:** ✅ RUNTIME GRADE VERIFIED — 137/138 tests (99.3%), Tier 4 TUI identity confirmed, 6-stage pipeline enforced
-**Bundle:** `dist/index.js` — 607KB (88 modules, bun build)
-**Container:** `opencode-test:1.14.43`, model `xiaomi-token-plan-sgp/mimo-v2.5-pro`
-**Runtime:** opencode 1.14.43
-**Build:** `bun build src/index.ts --outdir dist --target bun --format esm --bundle`
+**Runtime Grade Code by DEFAULT**
 
 ---
 
 ## Overview
 
-Spider v2.3 is a runtime-grade autonomous agent swarm for opencode. It provides parallel execution via N-dimensional verification SpiderWebs, a merged SRE+RGE+SGE Semantic Engine v3.0 with 6-layer audit pipeline, Model Enslavement Harness (7 constraints), Explicit Context Manager with compaction survival, and a mandatory 6-stage autonomous pipeline.
+Spider v2.3 is a runtime-grade linear-execution swarm-enabled software engineering agent for opencode. It provides parallel execution via N-dimensional verification SpiderWebs deployed AT EACH STAGE of a mandatory 6-stage pipeline, a merged SRE+RGE+SGE Semantic Engine v3.0 with 6-layer audit pipeline, Model Enslavement Harness (7 constraints), Explicit Context Manager with compaction survival, and runtime-grade code generation by default.
 
-### Architecture
+---
+
+## Architecture
+
+### The SpiderWeb — Parallel Execution AT Every Stage
+
+The 6-stage pipeline is **linear** (sequential stages that gate advancement), but each stage deploys an N-dimensional **SpiderWeb** — a parallel execution fabric where multiple agents work simultaneously:
 
 ```
-                        ┌──────────────────────────────┐
-                        │      SPIDER ORCHESTRATOR      │
-                        │  6-Stage Pipeline + SpiderWeb  │
-                        │  Semantic Engine v3.0 (L0-L5)  │
-                        │  Model Enslavement Harness     │
-                        └──────────┬───────────────────┘
-                                   │
-                    ┌──────────────┼──────────────┐
-                    │              │              │
-                    ▼              ▼              ▼
-              EXPLORE         ARCHITECT         CODER
-          (2 agents)        (2 agents)       (3 agents)
-                    │              │              │
-                    └──────────────┼──────────────┘
-                                   │
-                                   ▼
-                             REVIEWER
-                            (2 agents)
-                                   │
-                                   ▼
-                           TEST_ENGINEER
-                            (1 agent)
-                                   │
-                                   ▼
-                              CRITIC
-                            (1 agent)
+                          STAGE 1: EXPLORE
+                 ┌──────────────────────────────────┐
+                 │          SPIDERWEB               │
+                 │  ┌──────┐  ┌──────┐  ┌──────┐  │
+                 │  │Strand│  │Strand│  │Strand│  │  Up to 8 agents
+                 │  │  1   │  │  2   │  │  N   │  │  in parallel
+                 │  └──┬───┘  └──┬───┘  └──┬───┘  │
+                 │     └─────────┼─────────┘      │
+                 │          JACCARD              │
+                 │        SIMILARITY            │
+                 │        > 80% = PASS         │
+                 └──────────┬───────────────────┘
+                            │ gate: evaluate
+                            ▼
+                          STAGE 2: ARCHITECT
+                 ┌──────────────────────────────────┐
+                 │          SPIDERWEB               │
+                 │  ┌──────┐  ┌──────┐  ┌──────┐  │
+                 │  │Strand│  │Strand│  │Strand│  │  Up to 8 agents
+                 │  │  1   │  │  2   │  │  N   │  │  in parallel
+                 │  └──┬───┘  └──┬───┘  └──┬───┘  │
+                 │     └─────────┼─────────┘      │
+                 │          MERGE + REVIEW       │
+                 └──────────┬───────────────────┘
+                            │ gate: evaluate
+                            ▼
+                          STAGE 3: CODER
+                 ┌──────────────────────────────────┐
+                 │          SPIDERWEB               │
+                 │  ┌──────┐  ┌──────┐  ┌──────┐  │
+                 │  │Strand│  │Strand│  │Strand│  │  Up to 8 agents
+                 │  │  1   │  │  2   │  │  N   │  │  in parallel
+                 │  └──┬───┘  └──┬───┘  └──┬───┘  │
+                 │     └─────────┼─────────┘      │
+                 │     CONSENSUS + SELECT BEST   │
+                 └──────────┬───────────────────┘
+                            │ gate: evaluate
+                            ▼
+                          STAGE 4: REVIEWER
+                 ┌──────────────────────────────────┐
+                 │          SPIDERWEB               │
+                 │  ┌──────┐  ┌──────┐  ┌──────┐  │
+                 │  │Strand│  │Strand│  │Strand│  │  Up to 8 agents
+                 │  │  1   │  │  2   │  │  N   │  │  in parallel
+                 │  └──┬───┘  └──┬───┘  └──┬───┘  │
+                 │     └─────────┼─────────┘      │
+                 │    QUALITY GATE: PASS/FAIL    │
+                 └──────────┬───────────────────┘
+                            │ gate: evaluate
+                            ▼
+                       STAGE 5: TEST ENGINEER
+                 ┌──────────────────────────────────┐
+                 │          SPIDERWEB               │
+                 │  ┌──────┐  ┌──────┐  ┌──────┐  │
+                 │  │Strand│  │Strand│  │Strand│  │  Up to 8 agents
+                 │  │  1   │  │  2   │  │  N   │  │  in parallel
+                 │  └──┬───┘  └──┬───┘  └──┬───┘  │
+                 │     └─────────┼─────────┘      │
+                 │   COVERAGE + FUZZ + EDGE      │
+                 └──────────┬───────────────────┘
+                            │ gate: evaluate
+                            ▼
+                          STAGE 6: CRITIC
+                 ┌──────────────────────────────────┐
+                 │          SPIDERWEB               │
+                 │  ┌──────┐  ┌──────┐  ┌──────┐  │
+                 │  │Strand│  │Strand│  │Strand│  │  Up to 8 agents
+                 │  │  1   │  │  2   │  │  N   │  │  in parallel
+                 │  └──┬───┘  └──┬───┘  └──┬───┘  │
+                 │     └─────────┼─────────┘      │
+                 │  UNANIMOUS SIGN-OFF REQUIRED  │
+                 └──────────┬───────────────────┘
+                            │ gate: evaluate
+                            ▼
+                     ✅ PRODUCTION GRADE OUTPUT
 ```
 
-Each stage deploys a **SpiderWeb** — a parallel execution fabric with configurable strand count:
-- **VERIFY** (2-4 strands): Same task, different approaches → Jaccard similarity > 80% → consensus
-- **DIVIDE** (2-8 strands): Task decomposed → parallel execution → merge
-- **PRESSURE** (2-4 strands): Container adversarial testing → 5-phase protocol → evidence
+### SpiderWeb Execution Modes
+
+Each SpiderWeb at every stage operates in one of three modes:
+
+| Mode | Strands | Purpose | Consensus |
+|------|---------|---------|-----------|
+| **VERIFY** | 2-4 | Same task, different approaches → compare | Jaccard similarity > 80% |
+| **DIVIDE** | 2-8 | Task decomposed → parallel execution → merge | Merge + review |
+| **PRESSURE** | 2-4 | Container adversarial testing → 5-phase protocol | 90%+ pass rate |
+
+The `spiderweb-engine.ts` enforces that ALL required stages complete before dissolution:
+
+```
+MODE_PIPELINE_STAGES = {
+  verify:   ['explore', 'architect', 'coder', 'reviewer', 'critic'],
+  divide:   ['explore', 'architect', 'coder', 'reviewer', 'critic'],
+  pressure: ['explore', 'coder', 'test_engineer', 'critic'],
+}
+```
 
 ### Identity
 
@@ -112,16 +178,16 @@ The merged SRE+RGE+SGE provides a single unified audit pipeline:
 
 The engine has **real semantic understanding**, not just regex matching:
 
-| Test | Pattern | Result | Proof |
-|------|---------|--------|-------|
-| Theatrical return | `return { passed: true }` without I/O | **CAUGHT** (P11 + L4) | Engine detects fabricated evidence |
-| Legitimate return after I/O | `writeFileSync` then `return { passed: true }` | **ALLOWED** | Engine knows I/O happened |
-| Legitimate return after computation | `reduce()` then `return { success: true }` | **ALLOWED** | Engine recognizes computation as work |
-| Theatrical error handling | `catch(e) {}` | **CAUGHT** (L4-EMPTY-CATCH) | Empty catch = swallowed errors |
-| Unsafe cast from any | `function p(d) { return d as string; }` | **CAUGHT** (P2) | `TypeFlags.Any` check |
-| Safe cast with typeof guard | `if(typeof d === "string"){ return d as string; }` | **ALLOWED** | Type guard respected |
-| Floating promise | `new Promise(r => r(42));` | **CAUGHT** (L0 + L2-CFG) | Cross-layer detection |
-| Awaited promise | `await new Promise(...)` | **ALLOWED** | Await recognized |
+| Test | Pattern | Result |
+|------|---------|--------|
+| Theatrical return | `return { passed: true }` without I/O | **CAUGHT** (P11 + L4) |
+| Legitimate return after I/O | `writeFileSync` then `return { passed: true }` | **ALLOWED** |
+| Legitimate return after computation | `reduce()` then `return { success: true }` | **ALLOWED** |
+| Theatrical error handling | `catch(e) {}` | **CAUGHT** (L4-EMPTY-CATCH) |
+| Unsafe cast from any | `function p(d) { return d as string; }` | **CAUGHT** (P2) |
+| Safe cast with typeof guard | `if(typeof d === "string"){ return d as string; }` | **ALLOWED** |
+| Floating promise | `new Promise(r => r(42));` | **CAUGHT** (L0 + L2-CFG) |
+| Awaited promise | `await new Promise(...)` | **ALLOWED** |
 
 ---
 
@@ -173,7 +239,7 @@ Automatic detection + blocking in `chat.messages.transform`:
 | "not worth / diminishing returns" | Undermining | System warning injected |
 | "I verified / I confirmed" | Self-verification | **Content replaced** |
 | "let me grep/check source" | Source inspection variant | **Content replaced** |
-| `| wc -l` | Theatrical counting | **Content replaced** |
+| `\| wc -l` | Theatrical counting | **Content replaced** |
 | "no need for test" | Evidence-less | System warning injected |
 
 ---
@@ -188,21 +254,19 @@ Automatic detection + blocking in `chat.messages.transform`:
 | File authority | Write/delete path enforcement per spider sub-agent | `AGENT_FILE_AUTHORITY` map |
 | Bash write extraction | `rm`, `mv`, `tee`, `dd` paths detected and enforced | `extractBashAffectedPaths()` |
 
-**Verified:** 25+ non-whitelisted tools blocked, 8/8 spider tools pass, dual-variant 6/6 blocked.
-
 ---
 
 ## Container Test Results (Final — 30/30 PASS, 100%)
 
 | Test Group | Tests | Result |
 |-----------|-------|--------|
-| Pipeline Enforcement (T1) | 3 | ✅ Dissolve without stages BLOCKED |
-| Stage Advancement (T2) | 2 | ✅ Sequential ordering enforced |
-| Evidence Gating (T3) | 1 | ✅ Dissolve without evidence BLOCKED |
-| Failure Log Patterns (FL) | 14 | ✅ All 14 derailments prevented |
-| Cross-Agent Isolation (T5) | 4 | ✅ Zero leaks (14/14 sub-agents) |
-| Firewall (T6) | 2 | ✅ 17/17 blocked tools, 8/8 spider pass |
-| Derailment Detection (DR) | 7 | ✅ All patterns fire correctly |
+| Pipeline Enforcement | 3 | ✅ Dissolve without stages BLOCKED |
+| Stage Advancement | 2 | ✅ Sequential ordering enforced |
+| Evidence Gating | 1 | ✅ Dissolve without evidence BLOCKED |
+| Failure Log Patterns | 14 | ✅ All 14 derailments prevented |
+| Cross-Agent Isolation | 4 | ✅ Zero leaks (14/14 sub-agents) |
+| Firewall | 2 | ✅ 17/17 blocked tools, 8/8 spider pass |
+| Derailment Detection | 7 | ✅ All patterns fire correctly |
 | **TOTAL** | **30** | **✅ 100%** |
 
 ### Bug Fixes (9 Total)
@@ -247,7 +311,6 @@ cp dist/index.js "$SNAP/plugins/spider-agent-v2/dist/index.js"
 # 4. Config per T1_MIMO_INJECTABLE
 cp "$ACTIVE_CONFIG" "$SNAP/opencode.json"
 sed -i 's|/home/leviathan/.config/opencode/plugins/|/root/.config/opencode/plugins/|g' "$SNAP/opencode.json"
-# Replace model+provider with MiMo
 python3 -c "
 import json
 with open('$SNAP/opencode.json') as f:
@@ -314,9 +377,6 @@ bun -e "import m from './dist/index.js'; const h = await m({}); console.log('OK:
 ```bash
 # Adversarial test suite (91 tests)
 npx vitest run
-
-# Full system verification
-node tests/adversarial/engine-adversarial.test.ts
 ```
 
 ---
@@ -348,3 +408,9 @@ node tests/adversarial/engine-adversarial.test.ts
 - [Kraken Agent](https://github.com/leviathan-devops/kraken-agent) — Multi-brain orchestrator (orchestrator layer)
 - [Shark Agent](https://github.com/leviathan-devops/shark-agent) — Precision turbocoding agent (execution layer)
 - [Manta Agent](https://github.com/leviathan-devops/manta-agent) — Debug/precision specialist (testing layer)
+
+---
+
+## Credits
+
+Spider Agent v1.0 was originally forked from [opencode-swarm](https://github.com/zaxbysauce/opencode-swarm) by zaxbysauce. The original swarm architecture and parallel agent execution patterns provided the foundation for the SpiderWeb engine. Spider v2.3 is a complete ground-up rebuild with runtime-grade engineering, but the debt to the original opencode-swarm project is acknowledged.
