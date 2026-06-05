@@ -1,4 +1,4 @@
-# SPIDER AGENT v2.3 — Linear-Execution Swarm-Enabled Software Engineering Agent
+# SPIDER AGENT v2.3 — Swarm-Enabled Linear-Execution Software Engineering Agent
 
 **Runtime Grade Code by DEFAULT**
 
