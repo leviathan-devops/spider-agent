@@ -12,7 +12,7 @@
       "npm": "@ai-sdk/openai-compatible",
       "options": {
         "baseURL": "https://token-plan-sgp.xiaomimimo.com/v1",
-        "apiKey": "tp-ssy5nlzfc5vccack4ccierszbs0fojjp0lp3uj37hlp328ci"
+        "apiKey": "${MIMO_API_KEY}"
       }
     }
   },
